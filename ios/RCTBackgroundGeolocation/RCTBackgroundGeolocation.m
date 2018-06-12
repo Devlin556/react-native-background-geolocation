@@ -375,10 +375,10 @@ RCT_EXPORT_METHOD(forceSync:(RCTResponseSenderBlock)success failure:(RCTResponse
  */
 -(void) onFinishLaunching:(NSNotification *)notification
 {
-    if (@available(iOS 10, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = self;
-    }
+//     if (@available(iOS 10, *)) {
+//         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+//         center.delegate = self;
+//     }
 
     NSDictionary *dict = [notification userInfo];
     
